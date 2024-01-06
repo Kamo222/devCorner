@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding: none;
+  margin: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #eff2f4;
+  padding-top: 20px;
+}
+
+/* Nav Styles */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #183446;
+  align-items: center;
+  height: 10vh;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  overflow: hidden;
+  background-color: rgba(239, 242, 244, 0.8);
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.nav {
+  width: 40vw;
+  margin-left: 35vw;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+
+.icon {
+  font-size: 30px;
+  padding-left: 20px;
+  color: #183446;
+}
+
+.icon-span {
+  color: #0090c1;
+  font-size: 35px;
+}
+
+.nav-items {
+  font-size: 20px;
+  padding-left: 40px;
+  font-weight: 600;
+  color: #183446;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 550;
+}
+
+.nav-items:hover {
+  color: #0090c1;
+}
+
+
+
+/* Body Styles */
+
+.welcome-tag {
+  padding: 20px 7vw;
+  font-size: 70px;
+  color: #183446;
+}
+
+.welcome-text {
+  padding: 0 7vw 50px 7vw;
+  font-size: 30px;
+  color: #183446;
+}
+
+.blogs {
+  padding: 0 7vw;
+}
+
+.blog {
+  margin-bottom: 20px;
+  height: 250px;
+  width: 100%;
+  background-color: #183446;
+  display: flex;
+  border-radius: 10px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+/* .blog:hover {
+  background-color: #046e8f;
+} */
+
+.blog img {
+  height: 250px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.blog-text {
+  color: white;
+  padding-left: 100px;
+  padding-right: 50px;
+  font-size: 20px;
+
+}
+
+.blog-heading {
+  color: white;
+  padding-left: 100px;
+  font-size: 30px;
+}
+
+.blogView {
+  padding-top: 100px;
+  height: 40px;
+}
+
+.blog-page {
+  padding-top: 60px;
+}
+
+.blog-banner {
+  /* background: url("/public/assets/pexels-christina-morillo-1181676.jpg"); */
+  background: linear-gradient(rgba(32,32,32,0.6)80%, rgba(32, 32, 32, 0.5)80%), url("/public/assets/pexels-christina-morillo-1181676.jpg");
+  background-color: rgba(0,0,0,0.7);
+  background-position: center;
+  height: 300px;
+  padding: 0 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
+
+.banner-heading {
+  padding-top: 70px;
+  color: white;
+  font-size: 45px;
+  padding: none;
+  text-shadow: 2px 2px 15px #ffffffa4;
+}
+
+.banner-author {
+  color: white;
+  font-size: 30px;
+  padding: none;
+}
+
+.blog-page-text {
+  padding: 0 20px;
+}
+
+.blog-sections {
+  display: flex;
+  height: 1000px;
+}
+
+.sidebar {
+  background-color: white;
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sidebar2 {
+  background-color: white;
+  width: 1300px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sidebar-items {
+  width: 100%;
+  background-color: #0090c1;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.login-modal {
+  background-color: rgba(239, 242, 244, 1);
+  position:fixed;
+  z-index: 1;
+  width: 500px;
+  height: 87%;
+  border-radius: 10px;
+  margin-left: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.modalBackground {
+  position: fixed;
+  z-index: 1;
+  background: linear-gradient(rgba(32,32,32,0.6)80%, rgba(32, 32, 32, 0.5)80%);
+  height: 100vh;
+  width: 100vw;
+  margin-top: 5.5vh;
+  display: flex;
+  padding: 10px 0;
+  visibility: visible;
+}
+
+.profile-picture {
+  position: fixed;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  top: 200px;
+  border-radius: 100%;
+}
+
+.profile-heading {
+  position: fixed;
+  z-index: 1;
+  color: #0090c1;
+  top: 100px;
+}
+
+.form {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  color: #0090c1;
+  padding-left: 15px;
+}
+/* 
+
+Colors
+
+022f40
+38aecc
+0090c1
+183446
+046e8f
+
+*/
+
+
+
+
